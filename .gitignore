@@ -1,0 +1,8 @@
+.pio/
+build/
+dist/
+*.bin
+*.elf
+*.map
+.DS_Store
+.env*.local

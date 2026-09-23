@@ -1,0 +1,32 @@
+{
+  "board": "M5Stack StickS3 (BMI270)",
+  "capture_date": null,
+  "evidence": "HYPOTHESIS",
+  "expect": {
+    "MoveLeft": {
+      "eq": 0
+    },
+    "MoveRight": {
+      "eq": 0
+    },
+    "MoveWhileDip": {
+      "eq": 0
+    },
+    "RotateCw": {
+      "eq": 0
+    },
+    "SoftDropOn": {
+      "eq": 0
+    },
+    "dropped": {
+      "eq": 0
+    }
+  },
+  "name": "hypothesis-rest-synth",
+  "provenance": {
+    "source_sha256": "4db7685870bd62015db98138f836fad1d91c8e13a03739c804128ecc1dedc4d6",
+    "synthetic": true
+  },
+  "schema": "stackfall-trace-labels/1",
+  "stage": "REST"
+}

@@ -1,0 +1,69 @@
+# Three quads cross the ten-line boundary; LevelUp 2 follows the twelfth line.
+name: level_up_at_ten_lines
+mode: endless
+seed: 0x00000033
+level: 1
+wrap: 0
+board:
+.........O
+..........
+..........
+..........
+..........
+....OOOOOO
+O..OOOOOOO
+..OOOOOOOO
+O.OOOOOOOO
+O.OOOOOOOO
+O.OOOOOOOO
+O.OOOOOOOO
+O.OOOOOOOO
+O.OOOOOOOO
+O.OOOOOOOO
+O.OOOOOOOO
+O.OOOOOOOO
+O.OOOOOOOO
+O.OOOOOOOO
+O.OOOOOOOO
+piece: I
+hold: I
+actions: L L L CCW TICK2063 L L L CCW TICK2063 HOLD L L L CCW TICK2063
+expect_events:
+Lock 0
+LineClear 4
+Combo 1
+BackToBack 1
+Spawn 5
+Hold 0
+Move 2
+Move 1
+Move 0
+Rotate 3
+Lock 0
+LineClear 4
+Combo 2
+BackToBack 1
+LevelUp 2
+Spawn 4
+expect_score: 3350
+expect_board:
+..........
+..........
+..........
+..........
+..........
+..........
+..........
+..........
+..........
+..........
+..........
+..........
+.........O
+..........
+..........
+..........
+..........
+....OOOOOO
+O..OOOOOOO
+..OOOOOOOO

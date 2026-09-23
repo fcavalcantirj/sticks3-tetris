@@ -1,0 +1,57 @@
+# stackfall-replay v1
+seed 0x9e3779b9
+mode endless
+wrap 0
+epoch 0
+tick 8
+
+60 L
+60 L
+60 L
+60 HD
+120 HD
+180 R
+180 R
+180 HD
+240 CW
+240 CW
+240 CW
+240 R
+240 R
+240 R
+240 R
+240 R
+240 HD
+300 L
+300 L
+300 HD
+360 CW
+360 L
+360 L
+360 L
+360 L
+360 L
+360 HD
+420 CW
+420 L
+420 HD
+480 CW
+480 CW
+480 CW
+480 R
+480 R
+480 R
+480 R
+480 HD
+540 R
+540 HD
+600 CW
+600 HD
+
+hash 100 0x890e2c3d
+hash 200 0x1d8d0d1c
+hash 300 0x1252c3dc
+hash 400 0x83080c7c
+hash 500 0x51316201
+hash 600 0x55e7a674
+final 600 0x55e7a674
