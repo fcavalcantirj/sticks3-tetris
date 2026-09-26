@@ -29,6 +29,8 @@ misplaced piece. The story and the numbers:
 
 **Video (2.5 min):** [watch it play](https://drive.google.com/file/d/1ffaFAq8eJvOVujt2KnG6DF8Hn3Vkoui8/preview): the lookahead heuristic (not JEV) plays a 40-line game on the real stick at the watch pace: 40 lines in 101 pieces, 14,922 points, 153.5 s, 0 misplaced pieces (firmware v1.2.0).
 
+**Video, for contrast (2 min):** [JEV 8B, the language model, on the stick](https://drive.google.com/file/d/1NjyIIZtB6hY8cEExX6qw5xYjrvaXP3jI/preview): 3 lines in 32 pieces, then it tops out.
+
 ## Controls
 
 You hold the stick upright in one hand, screen toward your face, IR end up, USB-C down.

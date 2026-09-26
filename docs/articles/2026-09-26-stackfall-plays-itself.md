@@ -259,6 +259,7 @@ On the real stick (40-line mode, 8B with features):
 - It agreed with the heuristic on 8 of 34 moves.
 - It thought for 2.9 s at the median and up to 6.2 s. On its slowest thinks the piece had
   already landed and locked before the move arrived: one refused move and one divergence.
+- **Video (2 min):** [JEV 8B on the stick](https://drive.google.com/file/d/1NjyIIZtB6hY8cEExX6qw5xYjrvaXP3jI/preview), ending on GAME OVER with 760 points and 3 lines.
 
 Zero-shot plateaus near 40% top-1 and 70% top-3 between 4B and 8B, and gets two to three
 times slower. The prompt-and-size ladder is exhausted. The next lever is fine-tuning, which
