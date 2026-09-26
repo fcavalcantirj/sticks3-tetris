@@ -241,6 +241,29 @@ Full speed was too fast to watch. So the PC grew a watch pace:
 That's about 1.6 seconds per piece. That watch-pace game is the one [on video](https://drive.google.com/file/d/1ffaFAq8eJvOVujt2KnG6DF8Hn3Vkoui8/preview). The owner's verdict: *"this rhythm good for human eyes,
 slow for testing highest score. THIS IS GOLD."*
 
+## Update: the 8B rung
+
+Same day, one more step up the ladder, Qwen3-8B (Q4_K_M).
+
+On the host, with the same 40 states:
+
+| model and prompt | top-1 | top-3 | mean rank | time per move (p50 / p95) |
+|---|---|---|---|---|
+| 4B, features | 42.5% | 72.5% | 2.8 | 2.0 / 4.2 s |
+| 8B, features | 40.0% | 65.0% | 2.8 | 3.7 / 11.3 s |
+| 8B, board + features | 32.5% | 72.5% | 2.2 | 6.1 / 18.5 s |
+
+On the real stick (40-line mode, 8B with features):
+
+- 32 pieces, 3 lines and 760 points, then a block-out.
+- It agreed with the heuristic on 8 of 34 moves.
+- It thought for 2.9 s at the median and up to 6.2 s. On its slowest thinks the piece had
+  already landed and locked before the move arrived: one refused move and one divergence.
+
+Zero-shot plateaus near 40% top-1 and 70% top-3 between 4B and 8B, and gets two to three
+times slower. The prompt-and-size ladder is exhausted. The next lever is fine-tuning, which
+was reserved as the last resort.
+
 ## What we learned
 
 - **Host first, with the real engine behind the real protocol, is the whole trick.** By the
@@ -259,7 +282,7 @@ slow for testing highest score. THIS IS GOLD."*
 
 ## Next
 
-- **The 8B model** is the next rung for JEV.
+- **JEV's zero-shot ladder is exhausted at 8B** (see the update above).
 - **Fine-tuning** stays the last resort. Distilling the heuristic's choices into the model
   would likely close most of the gap, but it would change the question from "can it play
   zero-shot" to "can it imitate."
