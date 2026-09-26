@@ -3,6 +3,8 @@
 *2026-09-26. Everything below was measured that day, either on the host (the real game
 engine compiled for the Mac) or on the real M5StickS3. Each number says which.*
 
+**Video (2.5 min):** [watch it play](https://drive.google.com/file/d/1ffaFAq8eJvOVujt2KnG6DF8Hn3Vkoui8/preview): the lookahead heuristic (not JEV) plays a 40-line game on the real stick at the watch pace: 40 lines in 101 pieces, 14,922 points, 153.5 s, 0 misplaced pieces (firmware v1.2.0).
+
 Stackfall is an original falling-block puzzle for a single M5StickS3: a 135×240 screen, an
 IMU, two buttons, and a player who steers by tilting the stick. This article covers the
 autopilot we built for it. Two brains play the game and compete: a classic hand-weighted
@@ -236,7 +238,7 @@ Full speed was too fast to watch. So the PC grew a watch pace:
 3. It rests for a second.
 4. It drops.
 
-That's about 1.6 seconds per piece. The owner's verdict: *"this rhythm good for human eyes,
+That's about 1.6 seconds per piece. That watch-pace game is the one [on video](https://drive.google.com/file/d/1ffaFAq8eJvOVujt2KnG6DF8Hn3Vkoui8/preview). The owner's verdict: *"this rhythm good for human eyes,
 slow for testing highest score. THIS IS GOLD."*
 
 ## What we learned

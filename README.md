@@ -27,6 +27,8 @@ model compete, and the heuristic clears 40 lines on the real device without a si
 misplaced piece. The story and the numbers:
 [Stackfall plays itself](docs/articles/2026-09-26-stackfall-plays-itself.md).
 
+**Video (2.5 min):** [watch it play](https://drive.google.com/file/d/1ffaFAq8eJvOVujt2KnG6DF8Hn3Vkoui8/preview): the lookahead heuristic (not JEV) plays a 40-line game on the real stick at the watch pace: 40 lines in 101 pieces, 14,922 points, 153.5 s, 0 misplaced pieces (firmware v1.2.0).
+
 ## Controls
 
 You hold the stick upright in one hand, screen toward your face, IR end up, USB-C down.
