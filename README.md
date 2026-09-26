@@ -20,6 +20,13 @@ symbols link.
 | <img src="docs/img/play1.jpg" width="320" alt="Gameplay"> | <img src="docs/img/maze.jpg" width="320" alt="Calibration maze"> |
 | Gameplay | The calibration maze (learn your tilt axes) |
 
+## Autopilot
+
+A PC can play the stick by itself over USB. A classic heuristic and a small language
+model compete, and the heuristic clears 40 lines on the real device without a single
+misplaced piece. The story and the numbers:
+[Stackfall plays itself](docs/articles/2026-09-26-stackfall-plays-itself.md).
+
 ## Controls
 
 You hold the stick upright in one hand, screen toward your face, IR end up, USB-C down.
